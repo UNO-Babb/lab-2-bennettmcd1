@@ -1,0 +1,7 @@
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("time passed (minutes): "))
+
+endmins = (mins+dura)%60
+endhours = ((hour*60 + mins + dura)//60)%24
+print(endhours , ":" , endmins , sep="")
